@@ -1,0 +1,485 @@
+{
+  "build_complete": true,
+  "chronology": [
+    {
+      "date": "2026-03-03",
+      "evidence": [
+        {
+          "quote": "Maya Chen approved Invoice #381 for Northstar Logistics Corporation",
+          "raw_end": 114,
+          "raw_start": 47,
+          "sources": [
+            "01_invoice_approval.txt"
+          ]
+        }
+      ],
+      "title": "Approved: Invoice #381 for Northstar Logistics Corporation"
+    },
+    {
+      "date": "2026-03-05",
+      "evidence": [
+        {
+          "quote": "Jordan Carmichael approved Invoice #700 for Northstar Logistics Corporation",
+          "raw_end": 122,
+          "raw_start": 47,
+          "sources": [
+            "05_review_candidate_a.md"
+          ]
+        }
+      ],
+      "title": "Approved: Invoice #700 for Northstar Logistics Corporation"
+    },
+    {
+      "date": "2026-03-06",
+      "evidence": [
+        {
+          "quote": "Jordon Carmichael approved Invoice #701 for Northstar Logistics Corporation",
+          "raw_end": 122,
+          "raw_start": 47,
+          "sources": [
+            "06_review_candidate_b.md"
+          ]
+        }
+      ],
+      "title": "Approved: Invoice #701 for Northstar Logistics Corporation"
+    },
+    {
+      "date": "2026-03-07",
+      "evidence": [
+        {
+          "quote": "Northstar Logistics Corporation paid Payment #982",
+          "raw_end": 260,
+          "raw_start": 211,
+          "sources": [
+            "04_payment_notice.eml"
+          ]
+        }
+      ],
+      "title": "Paid: Payment #982"
+    },
+    {
+      "date": "2026-03-07T10:15:00-06:00",
+      "evidence": [
+        {
+          "quote": "liam.ortiz@example.test>\nTo: Maya Chen <maya.chen@example.test",
+          "raw_end": 80,
+          "raw_start": 18,
+          "sources": [
+            "04_payment_notice.eml"
+          ]
+        }
+      ],
+      "title": "Email Sent"
+    }
+  ],
+  "claims": [
+    {
+      "evidence": [
+        {
+          "quote": "Maya Chen approved Invoice #381 for Northstar Logistics Corporation",
+          "raw_end": 114,
+          "raw_start": 47,
+          "sources": [
+            "01_invoice_approval.txt"
+          ]
+        }
+      ],
+      "kind": "EVENT",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "actor",
+          "value": "Maya Chen"
+        },
+        {
+          "role": "object",
+          "value": "Invoice #381"
+        },
+        {
+          "role": "object",
+          "value": "Northstar Logistics Corporation"
+        },
+        {
+          "role": "description",
+          "value": "Invoice #381 for Northstar Logistics Corporation"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "APPROVED",
+      "score": 0.92
+    },
+    {
+      "evidence": [
+        {
+          "quote": "Maya Chen works for Northstar Logistics Corporation",
+          "raw_end": 167,
+          "raw_start": 116,
+          "sources": [
+            "01_invoice_approval.txt"
+          ]
+        }
+      ],
+      "kind": "RELATIONSHIP",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "source",
+          "value": "Maya Chen"
+        },
+        {
+          "role": "target",
+          "value": "Northstar Logistics Corporation"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "WORKS_FOR",
+      "score": 0.94
+    },
+    {
+      "evidence": [
+        {
+          "quote": "Maya Chen does not work for Northstar Logistics Corporation",
+          "raw_end": 93,
+          "raw_start": 34,
+          "sources": [
+            "02_employment_exception.md"
+          ]
+        }
+      ],
+      "kind": "RELATIONSHIP",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "source",
+          "value": "Maya Chen"
+        },
+        {
+          "role": "target",
+          "value": "Northstar Logistics Corporation"
+        }
+      ],
+      "polarity": "NEGATED",
+      "predicate": "WORKS_FOR",
+      "score": 0.94
+    },
+    {
+      "evidence": [
+        {
+          "quote": "Maya Chen did not authorize Payment #982 for Northstar Logistics Corporation",
+          "raw_end": 124,
+          "raw_start": 48,
+          "sources": [
+            "03_authorization_hold.txt"
+          ]
+        }
+      ],
+      "kind": "EVENT",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "actor",
+          "value": "Maya Chen"
+        },
+        {
+          "role": "object",
+          "value": "Payment #982"
+        },
+        {
+          "role": "object",
+          "value": "Northstar Logistics Corporation"
+        },
+        {
+          "role": "description",
+          "value": "Payment #982 for Northstar Logistics Corporation"
+        }
+      ],
+      "polarity": "NEGATED",
+      "predicate": "AUTHORIZED",
+      "score": 0.92
+    },
+    {
+      "evidence": [
+        {
+          "quote": "liam.ortiz@example.test>\nTo: Maya Chen <maya.chen@example.test",
+          "raw_end": 80,
+          "raw_start": 18,
+          "sources": [
+            "04_payment_notice.eml"
+          ]
+        }
+      ],
+      "kind": "EVENT",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "sender",
+          "value": "liam.ortiz@example.test"
+        },
+        {
+          "role": "recipient",
+          "value": "maya.chen@example.test"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "EMAIL_SENT",
+      "score": 0.995
+    },
+    {
+      "evidence": [
+        {
+          "quote": "Northstar Logistics Corporation paid Payment #982",
+          "raw_end": 260,
+          "raw_start": 211,
+          "sources": [
+            "04_payment_notice.eml"
+          ]
+        }
+      ],
+      "kind": "EVENT",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "actor",
+          "value": "Northstar Logistics Corporation"
+        },
+        {
+          "role": "object",
+          "value": "Payment #982"
+        },
+        {
+          "role": "description",
+          "value": "Payment #982"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "PAID",
+      "score": 0.92
+    },
+    {
+      "evidence": [
+        {
+          "quote": "liam.ortiz@example.test>\nTo: Maya Chen <maya.chen@example.test",
+          "raw_end": 80,
+          "raw_start": 18,
+          "sources": [
+            "04_payment_notice.eml"
+          ]
+        }
+      ],
+      "kind": "RELATIONSHIP",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "source",
+          "value": "maya.chen@example.test"
+        },
+        {
+          "role": "target",
+          "value": "liam.ortiz@example.test"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "RECEIVED",
+      "score": 0.995
+    },
+    {
+      "evidence": [
+        {
+          "quote": "liam.ortiz@example.test>\nTo: Maya Chen <maya.chen@example.test",
+          "raw_end": 80,
+          "raw_start": 18,
+          "sources": [
+            "04_payment_notice.eml"
+          ]
+        }
+      ],
+      "kind": "RELATIONSHIP",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "source",
+          "value": "liam.ortiz@example.test"
+        },
+        {
+          "role": "target",
+          "value": "maya.chen@example.test"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "SENT",
+      "score": 0.995
+    },
+    {
+      "evidence": [
+        {
+          "quote": "Jordan Carmichael approved Invoice #700 for Northstar Logistics Corporation",
+          "raw_end": 122,
+          "raw_start": 47,
+          "sources": [
+            "05_review_candidate_a.md"
+          ]
+        }
+      ],
+      "kind": "EVENT",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "actor",
+          "value": "Jordan Carmichael"
+        },
+        {
+          "role": "object",
+          "value": "Invoice #700"
+        },
+        {
+          "role": "object",
+          "value": "Northstar Logistics Corporation"
+        },
+        {
+          "role": "description",
+          "value": "Invoice #700 for Northstar Logistics Corporation"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "APPROVED",
+      "score": 0.92
+    },
+    {
+      "evidence": [
+        {
+          "quote": "Jordon Carmichael approved Invoice #701 for Northstar Logistics Corporation",
+          "raw_end": 122,
+          "raw_start": 47,
+          "sources": [
+            "06_review_candidate_b.md"
+          ]
+        }
+      ],
+      "kind": "EVENT",
+      "modality": "ASSERTED",
+      "participants": [
+        {
+          "role": "actor",
+          "value": "Jordon Carmichael"
+        },
+        {
+          "role": "object",
+          "value": "Invoice #701"
+        },
+        {
+          "role": "object",
+          "value": "Northstar Logistics Corporation"
+        },
+        {
+          "role": "description",
+          "value": "Invoice #701 for Northstar Logistics Corporation"
+        }
+      ],
+      "polarity": "AFFIRMED",
+      "predicate": "APPROVED",
+      "score": 0.92
+    }
+  ],
+  "counts": {
+    "affirmed_claims": 8,
+    "claims": 10,
+    "documents": 6,
+    "entities": 12,
+    "events": 5,
+    "negated_claims": 2,
+    "relationships": 16,
+    "review_items": 1
+  },
+  "demo": "DocChrono synthetic compliance claims",
+  "docchrono_version": "0.1.0",
+  "human_review_notice": "Extraction output is evidence for review, not a compliance verdict. A qualified reviewer must inspect the quoted sources, context, and applicable policy.",
+  "parallel_claim_relationship": {
+    "interpretation": "The documents make opposing source claims about the same relationship. DocChrono preserves both; it does not decide which claim is true.",
+    "opposing_claims": [
+      {
+        "evidence": [
+          {
+            "quote": "Maya Chen does not work for Northstar Logistics Corporation",
+            "raw_end": 93,
+            "raw_start": 34,
+            "sources": [
+              "02_employment_exception.md"
+            ]
+          }
+        ],
+        "kind": "RELATIONSHIP",
+        "modality": "ASSERTED",
+        "participants": [
+          {
+            "role": "source",
+            "value": "Maya Chen"
+          },
+          {
+            "role": "target",
+            "value": "Northstar Logistics Corporation"
+          }
+        ],
+        "polarity": "NEGATED",
+        "predicate": "WORKS_FOR",
+        "score": 0.94
+      }
+    ],
+    "supporting_claims": [
+      {
+        "evidence": [
+          {
+            "quote": "Maya Chen works for Northstar Logistics Corporation",
+            "raw_end": 167,
+            "raw_start": 116,
+            "sources": [
+              "01_invoice_approval.txt"
+            ]
+          }
+        ],
+        "kind": "RELATIONSHIP",
+        "modality": "ASSERTED",
+        "participants": [
+          {
+            "role": "source",
+            "value": "Maya Chen"
+          },
+          {
+            "role": "target",
+            "value": "Northstar Logistics Corporation"
+          }
+        ],
+        "polarity": "AFFIRMED",
+        "predicate": "WORKS_FOR",
+        "score": 0.94
+      }
+    ],
+    "type": "WORKS_FOR"
+  },
+  "review_queue": [
+    {
+      "candidates": [
+        "Jordan Carmichael",
+        "Jordon Carmichael"
+      ],
+      "evidence": [
+        {
+          "quote": "Jordan Carmichael",
+          "sources": [
+            "05_review_candidate_a.md"
+          ]
+        },
+        {
+          "quote": "Jordon Carmichael",
+          "sources": [
+            "06_review_candidate_b.md"
+          ]
+        }
+      ],
+      "kind": "entity_merge_candidate",
+      "reason": "RapidFuzz token similarity 0.941",
+      "recommended_action": "Human review required; do not merge based on this score alone.",
+      "score": 0.912941
+    }
+  ],
+  "round_trip_verified": true
+}

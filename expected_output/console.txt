@@ -1,0 +1,11 @@
+DocChrono 0.1.0 compliance claims demo
+Documents: 6
+Claims: 10 (8 affirmed, 2 negated)
+Events in chronology: 5
+Relationships in graph: 16
+Parallel WORKS_FOR evidence: 1 supporting, 1 opposing
+Review candidates: 1
+Evidence snapshot round-trip: verified
+
+Human review notice:
+Extraction output is evidence for review, not a compliance verdict. A qualified reviewer must inspect the quoted sources, context, and applicable policy.
